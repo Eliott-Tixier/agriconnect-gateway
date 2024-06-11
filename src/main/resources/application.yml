@@ -1,19 +1,9 @@
 # Proprietes de l'application
 spring:
   application:
-    name: agriconnect-gateway
+    name: acgateway
   profiles:
     active: dev
     # Adresse du service de configuration
-  config:
-    #LOCAL
-    import: file:src/main/resources/solo.yml
-    # SANS DOCKER COMPOSE
-    # import: optional:configserver:http://localhost:10003
-    # AVEC DOCKER COMPOSE
-    #import: optional:configserver:http://bnkconfigsrv:10003
-
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
+  config :
+    import: optional:configserver:http://localhost:10002
