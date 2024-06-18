@@ -90,7 +90,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
+                <configuration>springframework
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>
